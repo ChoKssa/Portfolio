@@ -74,9 +74,26 @@ nav ul li:hover{
 
 .content header h1{
     margin: 0;
+    width: 50%;
     text-transform: uppercase;
     font-size: 3vw;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 4px solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto;
+    animation: typing 3.5s steps(35, end), blink-caret 1s step-end infinite;
 }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
 
 .content header p{
     margin-top: 5%;
@@ -107,7 +124,6 @@ nav ul li:hover{
     margin-top: 50px;
     border-radius: 15px;
 }
-
 
 @keyframes transitor_opacity{
     from {

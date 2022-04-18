@@ -149,7 +149,8 @@ nav ul li:hover{
     }
     .content header h1{
         text-align: center;
-        width: 70%;
+        width: 60%;
+        animation: typing 3s steps(30, end), blink-caret 1s step-end infinite;
     }
     nav{
         position: relative;

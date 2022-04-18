@@ -157,6 +157,7 @@ nav ul li:hover{
     .projects{
         display: flex;
         flex-wrap: wrap;
+        padding-left: 0;
     }
     .projects img {
         width: 250px;

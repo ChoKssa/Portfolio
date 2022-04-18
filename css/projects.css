@@ -162,6 +162,9 @@ nav ul li:hover{
     .projects img {
         width: 250px;
     }
+    .projects .project h1 {
+        width: 150px;
+    }
     nav{
         position: relative;
     }

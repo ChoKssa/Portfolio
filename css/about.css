@@ -155,5 +155,23 @@ nav {
     .content .infos p{
         width: 100%;
     }
-
+    #profile{
+        width: 180px;
+        border-bottom: 1px solid white;
+    }
+    
+    #activity{
+        width: 165px;
+        border-bottom: 1px solid white;
+    }
+    
+    #goals{
+        width: 220px;
+        border-bottom: 1px solid white;
+    }
+    
+    #socials{
+        width: 130px;
+        border-bottom: 1px solid white;
+    }
  }

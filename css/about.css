@@ -56,6 +56,69 @@ nav ul li:hover{
     border-bottom-color: white;
 }
 
+nav {
+    border-bottom: 1px solid white;
+}
+
+.content{
+    animation: transitor_opacity 1s;
+}
+
+.content h1{
+    margin: 0;
+    width: 20%;
+    text-transform: uppercase;
+    font-size: 3vw;
+    overflow: hidden;
+    border-right: 4px solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 2s steps(10, end), blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 20% }
+  }
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+.infos {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+#profile{
+    width: 160px;
+    border-bottom: 1px solid white;
+}
+
+#activity{
+    width: 145px;
+    border-bottom: 1px solid white;
+}
+
+#goals{
+    width: 200px;
+    border-bottom: 1px solid white;
+}
+
+#socials{
+    width: 110px;
+    border-bottom: 1px solid white;
+}
+
+.content p{
+    width: 600px;
+}
+
+.content .infos .next_infos{
+    margin-top: 80px;
+}
+
 #first_img{
     float: right;
     border-radius: 20%;
@@ -69,3 +132,28 @@ nav ul li:hover{
     width: 50px;
     height: auto;
 }
+
+@keyframes transitor_opacity{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+ }
+
+ @media  screen and (max-width: 700px) {
+    .profile {
+        width: 100%;
+    }
+    .content h1 {
+        display: none;
+    }
+    .infos {
+        margin-left: 0;
+    }
+    .content .infos p{
+        width: 100%;
+    }
+
+ }

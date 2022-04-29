@@ -21,7 +21,6 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    position: sticky;
     top: 0;
 }
 
@@ -73,25 +72,27 @@ nav ul li:hover{
 }
 
 .content header h1{
-    margin: 0;
     width: 50%;
+    position: relative;
+    margin: 0;
     text-transform: uppercase;
     font-size: 3vw;
-    overflow: hidden;
-    border-right: 4px solid orange;
     white-space: nowrap;
     margin: 0 auto;
-    animation: typing 3.5s steps(35, end), blink-caret 1s step-end infinite;
 }
 
-@keyframes typing {
-    from { width: 0 }
-    to { width: 50% }
-  }
+.content header h1::after{
+    content: "|";
+    position: absolute;
+    font-weight: bold;
+    font-size: 3vw;
+    animation: blink-caret 1s step-end infinite;
+
+}
 
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
+    from, to { color: transparent }
+    50% { color: orange }
 }
 
 .content header p{
@@ -134,7 +135,6 @@ nav ul li:hover{
      
  }
 
-
 @media screen and (max-width: 700px){
     nav{
         justify-content: center;
@@ -145,13 +145,5 @@ nav ul li:hover{
     }
     #python{
         width: 100%;
-    }
-    .content header h1{
-        text-align: center;
-        width: 60%;
-        animation: typing 3s steps(30, end), blink-caret 1s step-end infinite;
-    }
-    nav{
-        position: relative;
     }
 }
